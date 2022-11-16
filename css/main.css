@@ -1,0 +1,935 @@
+﻿body {
+    font-family: 'B Yekan';
+    direction: rtl;
+    background: #0a3659;
+    padding: 0;
+    margin: 0;
+}
+
+ul, h1, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+}
+/*------------------------------------------------------header-------------------------------------------------------*/
+#header > div {
+    background: #f5f5f5;
+    color: #ff6a00;
+    text-align: right;
+    padding: 10px;
+}
+
+    #header > div.banner {
+        background: #014ba8;
+        padding: 0;
+        margin: 0;
+    }
+
+    #header > div > ul {
+        padding-right: 100px;
+    }
+
+        #header > div > ul > li {
+            border-right: 1px dotted #bbb;
+        }
+
+    #header > div > form {
+        position: relative;
+    }
+
+        #header > div > form > input[type=text] {
+            background: #eee;
+        }
+
+        #header > div > form > button {
+            position: absolute;
+            top: 2px;
+        }
+
+    #header > div > img {
+        width: 100%;
+    }
+/*------------------------------------------------------menu---------------------------------------------------------*/
+#page > div.menu {
+    background-color: #19a8e5;
+    border: 0;
+}
+
+    #page > div.menu > div.navbar {
+        border: 0;
+        background-color: #19a8e5;
+        padding: 0;
+        margin: 0;
+    }
+
+        #page > div.menu > div.navbar > div > div > img {
+            padding: 11px 11px 12px 11px;
+            display: block;
+            background: #1397df;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul {
+            float: right;
+        }
+
+            #page > div.menu > div.navbar > div > div > ul > li {
+                position: relative;
+            }
+
+
+
+        #page > div.menu > div.navbar > div > div.collapse {
+            right: 18%;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul > li > a {
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul > li > span {
+            height: 5px;
+            width: 100%;
+            background: #0071ae;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            z-index: 10;
+            display: none;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul > li:hover > span, #page > div.menu > div.navbar > div > div > ul > li.active > span {
+            display: block;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul > li.active > a {
+            color: #006699;
+            background-color: #f5f5f5;
+            text-shadow: none;
+        }
+
+        #page > div.menu > div.navbar > div > div > ul > li > a:hover {
+            color: #006699;
+            background-color: #f5f5f5;
+            text-shadow: none;
+        }
+/*--------------------------------------------------menuToolsBar------------------------------------------------------*/
+#menuToolsBar {
+    height: 5px;
+    width: 100%;
+    background-color: #1397df;
+}
+
+/*----------------------------------------------------mainPage--------------------------------------------------------*/
+#mainPage > div {
+    background-color: #dedede;
+    position: relative;
+}
+/*--------------------------------------------------contentPage--------------------------------------------------------*/
+#contentPage {
+    background-color: #dff6ff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 100px;
+    z-index: 20;
+    padding: 0 0 50px 0;
+}
+    /*------------------------------------------contentPage_firstRow--------------------------------------------------*/
+    #contentPage > div.first > div {
+        padding: 10px;
+    }
+
+        #contentPage > div.first > div > p {
+            color: #0099cc;
+            padding: 3px 5px;
+        }
+
+        #contentPage > div.first > div > div.mynav {
+            height: 20px;
+            overflow: hidden;
+            position: relative;
+            width: 400px;
+            margin-top: 3px;
+        }
+
+            #contentPage > div.first > div > div.mynav > ul {
+                list-style-type: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+                #contentPage > div.first > div > div.mynav > ul > li > a {
+                    color: #000;
+                }
+/*----------------------------------------------------contentPage_secondRow--------------------------------------------------------*/
+#MyCarousel > div.carousel-inner > div > img {
+    width: 100%;
+    position: relative;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    border-radius: 5px;
+}
+
+#MyCarousel > a {
+    border-radius: 5px;
+}
+
+#listSlider > ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#listSlider > ul {
+    list-style: none;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+    #listSlider > ul > li {
+        cursor: pointer;
+        background-color: #343434;
+        color: #bfbfbf;
+        padding: 10px 0;
+        text-align: center;
+        float: right;
+    }
+
+        #listSlider > ul > li > p {
+            margin: 0;
+            padding: 0;
+            border-left: 1px solid #5d5d5d;
+        }
+
+        #listSlider > ul > li.active {
+            background-color: #fff;
+            color: #343434;
+        }
+
+            #listSlider > ul > li.active > p {
+                border-left-color: #fff;
+            }
+
+        #listSlider > ul > li.first {
+            border-bottom-right-radius: 5px;
+        }
+
+        #listSlider > ul > li.end {
+            border-bottom-left-radius: 5px;
+        }
+
+            #listSlider > ul > li.end > p {
+                border-left-color: #343434;
+            }
+
+        #listSlider > ul > li:hover {
+            background-color: #fff;
+            color: #343434;
+        }
+
+            #listSlider > ul > li:hover > p {
+                border-left-color: #fff;
+            }
+
+        #listSlider > ul > li > span {
+            height: 5px;
+            width: 100%;
+            background: #ff6633;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+            display: none;
+        }
+
+        #listSlider > ul > li:hover > span, #listSlider > ul > li.active > span {
+            display: block;
+        }
+
+#contentPage > div.second > div.second {
+    padding-left: 0;
+}
+
+    #contentPage > div.second > div.second > a {
+        display: block;
+        border: 1px solid #c1e9f9;
+        background-color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        #contentPage > div.second > div.second > a:hover {
+            box-shadow: 0 0 8px #006699;
+        }
+
+            #contentPage > div.second > div.second > a:hover > h3 {
+                font-weight: bold;
+            }
+
+            #contentPage > div.second > div.second > a:hover > div > h3 {
+                font-weight: bold;
+            }
+
+        #contentPage > div.second > div.second > a.middle {
+            margin: 34px 0;
+        }
+
+        #contentPage > div.second > div.second > a > div > img {
+            display: block;
+            margin: 10px auto 10px auto;
+        }
+
+        #contentPage > div.second > div.second > a > div > h3 {
+            font-family: 'B Yekan';
+            color: #f7774b;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 20px;
+        }
+
+        #contentPage > div.second > div.second > a > div > p {
+            text-align: center;
+            color: #5dbbcc;
+            font-size: 14px;
+        }
+
+
+/*--------------------------------------------contentPage_thirdRow----------------------------------------------------*/
+#product {
+    margin-top: 13px;
+}
+
+    #product > div.productChild, #backet, #category, #topProduct {
+        border: 1px double #c1e9f9;
+        background: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin: 10px 0;
+    }
+
+    #product > div.productChild {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+        #product > div.productChild > div.header, #backet > div.header, #category > div.header, #topProduct > div.header {
+            background-color: #0094d3;
+            position: relative;
+            min-height: 40px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+            #product > div.productChild > div.header > div.img, #backet > div.header > div.img, #category > div.header > div.img, #topProduct > div.header > div.img {
+                padding: 0;
+                margin: 0;
+            }
+
+                #product > div.productChild > div.header > div.img > img, #backet > div.header > div.img > img, #category > div.header > div.img > img, #topProduct > div.header > div.img > img {
+                    position: absolute;
+                    right: 3px;
+                }
+
+                #product > div.productChild > div.header > div.img > img {
+                    top: -8px;
+                }
+
+                #backet > div.header > div.img > img, #category > div.header > div.img > img, #topProduct > div.header > div.img > img {
+                    top: -10px;
+                }
+
+            #product > div.productChild > div.header > div > p, #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+                color: #fff;
+                text-shadow: 0 1px 0 #000;
+            }
+
+            #product > div.productChild > div.header > div > p {
+                font-size: 12px;
+                padding-top: 5px;
+                padding: 0;
+                margin: 0;
+            }
+
+        #product > div.productChild > img.productImg {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        #product > div.productChild > p {
+            border-top: 1px dashed #888;
+            font-family: Tahoma;
+            font-size: 11px;
+            text-align: justify;
+        }
+
+        #product > div.productChild > div.price {
+            text-align: center;
+        }
+
+            #product > div.productChild > div.price > span.num {
+                color: #ff9933;
+            }
+
+        #product > div.productChild > div.infoBuy {
+            padding: 0;
+        }
+
+            #product > div.productChild > div.infoBuy > a, #backet > div.finalOrder > a {
+                display: block;
+                outline: none;
+                text-decoration: none;
+                border-radius: 5px;
+                padding: 0;
+                text-align: center;
+                opacity: .8;
+            }
+
+            #product > div.productChild > div.infoBuy > a {
+                margin: 10px 0;
+            }
+
+                #product > div.productChild > div.infoBuy > a.first {
+                    background-color: #4ccf8b;
+                    float: left;
+                }
+
+                #product > div.productChild > div.infoBuy > a.second {
+                    background-color: #f77b72;
+                    float: right;
+                }
+
+                #product > div.productChild > div.infoBuy > a > p {
+                    color: #fff;
+                    padding: 8px 0 0 0;
+                    font-size: 10px;
+                    text-align: center;
+                    float: left;
+                }
+
+
+
+                #product > div.productChild > div.infoBuy > a > img, #backet > div.finalOrder > a > img {
+                    display: block;
+                    float: right;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                #product > div.productChild > div.infoBuy > a > img {
+                    padding: 5px 3px 5px 3px;
+                }
+
+                #product > div.productChild > div.infoBuy > a.first > img {
+                    background-color: #4cc185;
+                }
+
+                #product > div.productChild > div.infoBuy > a.second > img {
+                    background-color: #f44336;
+                }
+
+        #product > div.productChild:hover > div.infoBuy > a, #backet > div > a:hover {
+            opacity: 1;
+        }
+
+            #product > div.productChild > div.infoBuy > a:hover > p, #backet > div > a:hover > p {
+                font-weight: bold;
+            }
+
+/*#contentPage > div.third > div.second {
+    padding-left: 0;
+}*/
+
+#backet {
+    margin-top: 30px;
+}
+
+    /*#backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+        font-size: 15px;
+        padding: 8px 12px 0 0;
+    }*/
+
+    #backet > div.productName {
+        border: 1px solid #c1e9f9;
+        background-color: #dff6ff;
+        border-radius: 5px;
+    }
+
+        #backet > div.productName.first {
+            margin: 20px 0 10px 0;
+        }
+
+        #backet > div.productName.second {
+            margin-bottom: 20px;
+        }
+
+        #backet > div.productName > p.first {
+            float: right;
+            color: #0094d3;
+        }
+
+        #backet > div.productName > p.second {
+            float: left;
+            color: #ff9933;
+        }
+
+    #backet > div.price {
+        padding-top: 10px;
+        border-top: 1px dashed #888;
+    }
+
+        #backet > div.price > span.first {
+            float: right;
+        }
+
+        #backet > div.price > span.num {
+            float: left;
+            color: #e52932;
+        }
+
+    #backet > div.finalOrder {
+        margin: 20px 0 10px 0;
+        padding: 0;
+    }
+
+        #backet > div.finalOrder > a {
+            background-color: #29b6f6;
+            float: left;
+        }
+
+            #backet > div.finalOrder > a > p {
+                float: left;
+                color: #fff;
+                font-size: 13px;
+                padding: 0;
+                margin: 0;
+                border-top-left-radius: 5px;
+                line-height: 2em;
+            }
+
+
+            #backet > div.finalOrder > a > img {
+                background-color: #25a3dd;
+                padding: 5px;
+            }
+
+#category > ul, #topProduct > div.mynav > ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+    #category > ul > li, #topProduct > div.mynav > ul > li {
+        margin: 5px;
+    }
+
+        #category > ul > li > h3, #topProduct > div.mynav > ul > li > a {
+            padding: 5px;
+            font-size: 13px;
+        }
+
+        #category > ul > li > h3, #category > ul > li > ul > li > a, #topProduct > div.mynav > ul > li > a {
+            color: #a3a3a3;
+            background-color: #f7f7f7;
+            border: 1px solid #dfdfdf;
+            border-radius: 5px;
+        }
+
+            #category > ul > li > h3:hover {
+                background-color: #fe9548;
+                color: #fff;
+            }
+
+        #category > ul > li > ul {
+            list-style: none;
+            display: none;
+        }
+
+            #category > ul > li > img.listImg, #category > ul > li > ul > li > img.listImg, #topProduct > div.mynav > ul > li > img.listImg {
+                display: block;
+                float: right;
+                margin: 8px;
+            }
+
+            #category > ul > li > img.hoverListImg, #category > ul > li > ul > li > img.hoverListImg, #topProduct > div.mynav > ul > li > img.hoverListImg {
+                display: block;
+                float: right;
+                margin: 8px;
+                display: none;
+            }
+
+            #category > ul > li:hover > img.listImg, #category > ul > li > ul > li:hover > img.listImg, #topProduct > div.mynav > ul > li:hover > img.listImg {
+                display: none;
+            }
+
+            #category > ul > li:hover > img.hoverListImg, #category > ul > li > ul > li:hover > img.hoverListImg, #topProduct > div.mynav > ul > li:hover > img.hoverListImg {
+                display: block;
+            }
+
+        #category > ul > li:hover > ul {
+            display: block;
+        }
+
+        #category > ul > li > ul > li {
+            margin: 5px 20px 5px 5px;
+        }
+
+            #category > ul > li > ul > li > a, #topProduct > div.mynav > ul > li > a {
+                display: block;
+                outline: none;
+                text-decoration: none;
+            }
+
+            #category > ul > li > ul > li > a {
+                font-size: 12px;
+                padding: 4px;
+            }
+
+                #category > ul > li > ul > li > a:hover, #topProduct > div.mynav > ul > li > a:hover {
+                    background-color: #4ab9e9;
+                    color: #fff;
+                }
+
+#footerContentPage {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0a3659;
+    z-index: 10;
+}
+
+#product > div.productChild.myPager {
+    text-align: center;
+}
+
+#listPager {
+    background: #f2fbff;
+    border: 1px solid #c9f0ff;
+    border-radius: 5px;
+    height: 42px;
+    overflow: hidden;
+}
+
+    #listPager > ul {
+        list-style: none;
+        float: left;
+        padding: 0 15px;
+    }
+
+        #listPager > ul > li {
+            float: left;
+        }
+
+            #listPager > ul > li > a {
+                width: 30px;
+                display: block;
+                float: left;
+                text-decoration: none;
+                outline: none;
+                background-color: #76d8ff;
+                border-radius: 5px;
+                margin: 5px;
+                padding: 5px;
+                color: #fff;
+                text-align: center;
+            }
+
+            #listPager > ul > li.active > a {
+                background-color: #2ab1e7;
+            }
+
+            #listPager > ul > li > a:hover {
+                background-color: #2ab1e7;
+            }
+
+#nxtprvPager > ul {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+    #nxtprvPager > ul > li {
+        display: inline;
+    }
+
+        #nxtprvPager > ul > li.prv {
+            float: left;
+        }
+
+        #nxtprvPager > ul > li.nxt {
+            float: right;
+        }
+
+        #nxtprvPager > ul > li > a {
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #fff;
+            border: 1px solid #76d8ff;
+            border-radius: 15px;
+            background-color: #fff;
+            color: #2ab1e7;
+            outline: none;
+            text-decoration: none;
+        }
+
+            #nxtprvPager > ul > li > a:hover {
+                background-color: #2ab1e7;
+                color: #fff;
+            }
+
+#footer > ul {
+    list-style: none;
+    color: #000;
+    padding-top: 20px;
+    background-color: #0a3659;
+    float: left;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #fff;
+}
+
+    #footer > ul > li {
+        display: inline-block;
+    }
+
+        #footer > ul > li > a {
+            color: #fff;
+            outline: none;
+        }
+
+        #footer > ul > li.active > a {
+            color: #66ccff;
+        }
+
+        #footer > ul > li > a:hover {
+            color: #66ccff;
+        }
+
+        #footer > ul > li + li:before {
+            padding: 0 5px;
+            color: #fff;
+            content: "/\00a0";
+        }
+
+#footer > p {
+    background-color: #0a3659;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+
+/*---------------------------------------------------@media----------------------------------------------------------*/
+@media (min-width:50px) {
+    #header > div > form {
+        padding-left: 30px;
+    }
+
+        #header > div > form > button {
+            left: 32px;
+        }
+
+    #product > div.productChild > div.infoBuy > a {
+        width: 50%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 50%;
+        }
+
+    #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+        font-size: 11px;
+        padding: 8px 20px 0 0;
+    }
+
+    #contentPage > div.third > div.second {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width:300px) {
+    #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+        font-size: 13px;
+        padding: 8px 10px 0 0;
+    }
+}
+
+@media (min-width:315px) {
+    #product > div.productChild > div.infoBuy > a {
+        width: 48%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 58%;
+        }
+}
+
+@media (min-width:370px) {
+    #product > div.productChild > div.infoBuy > a {
+        width: 48%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 65%;
+        }
+}
+
+@media (min-width:400px) {
+
+    #backet > div.header > div, #category > div.header > div, #topProduct > div.header > div {
+        text-align: center;
+    }
+
+        #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+            font-size: 13px;
+            padding: 8px 0 0 50px;
+        }
+}
+
+@media (min-width:430px) {
+    #product > div.productChild > div.infoBuy > a {
+        width: 48.5%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 75%;
+        }
+}
+
+@media (min-width: 480px) {
+    #product > div.productChild.middle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #product > div.productChild.middle_2 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:499px) {
+    #header > div > form {
+        padding-left: 50px;
+    }
+
+        #header > div > form > button {
+            left: 52px;
+        }
+
+    #product > div.productChild > div.infoBuy > a {
+        width: 48.5%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 80%;
+        }
+
+    #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+            font-size: 15px;
+            padding: 8px 0 0 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    #header > div > form {
+        padding-left: 100px;
+    }
+
+        #header > div > form > button {
+            left: 102px;
+        }
+
+    #page > div.menu > div.navbar > div > div > ul > li {
+        float: right;
+    }
+
+    #product > div.productChild > div.infoBuy > a {
+        width: 47%;
+    }
+
+        #product > div.productChild > div.infoBuy > a > p {
+            width: 65%;
+        }
+
+    #product > div.productChild {
+        width: 49%;
+    }
+
+        #product > div.productChild.middle {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #product > div.productChild.middle_2 {
+            margin-left: 2%;
+        }
+
+    #contentPage > div.third > div.second {
+        padding-left: 0;
+    }
+
+    #backet > div.header > div, #category > div.header > div, #topProduct > div.header > div {
+        text-align: right;
+    }
+
+        #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+            font-size: 13px;
+            padding: 8px 10px 0 0;
+        }
+}
+
+@media (min-width: 992px) {
+    #product > div.productChild {
+        width: 32%;
+    }
+
+        #product > div.productChild.middle_2 {
+            margin-left: 0;
+        }
+
+        #product > div.productChild.middle {
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+
+        #product > div.productChild > div.infoBuy > a {
+            width: 47%;
+        }
+
+            #product > div.productChild > div.infoBuy > a > p {
+                width: 60%;
+            }
+
+    #backet > div.header > div > p, #category > div.header > div > p, #topProduct > div.header > div > p {
+        font-size: 15px;
+        padding: 8px 15px 0 0;
+    }
+}
+
+@media (min-width:1200px) {
+    #product > div.productChild {
+        width: 32%;
+    }
+
+        #product > div.productChild.middle_2 {
+            margin-left: 0;
+        }
+
+        #product > div.productChild.middle {
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+
+        #product > div.productChild > div.infoBuy > a {
+            width: 47%;
+        }
+
+            #product > div.productChild > div.infoBuy > a > p {
+                width: 68%;
+            }
+}
